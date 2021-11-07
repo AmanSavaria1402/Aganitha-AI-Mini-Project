@@ -31,7 +31,7 @@ To pull these images in your system/cloud instance, use the following commands:
     `docker run --name postgres_server -v "$PWD"/:/db/ -e POSTGRES_PASSWORD=password -d postgres`<br>
     `docker exec -it postgres_server psql -U postgres -f /db/database.sql`
     <br>**Note:** Change the location in the -v tag to point to the location where the database sql script is stored in the first line.
-- Now, create the jupyter notebook container and link it to the postgres container using the following command in the terminal:
+- Now, create the jupyter notebook container and link it to the postgres container using the following command in the terminal:<br>
 `docker run -p 8888:8888 --name jupyter_container --link postgres_server jupyter/minimal-notebook`
 - This will start the jupyter notebook/container and will give a of the format `http://0.0.0.0:8888/?token=...`, replace the 0.0.0.0 in the link to the public IP address of the ec2 instance and paste the resulting link in the browser. The jupyter notebook will start.
 
