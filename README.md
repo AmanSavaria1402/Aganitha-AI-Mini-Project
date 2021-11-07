@@ -10,7 +10,7 @@ This repository contains the code and the replication instructions of the mini-p
 
 This was borrowed from the Coderbyte assignment page.
 
-To visit the notebook yourself, please visit this [link](http://3.17.178.241:8888/?token=677d7d4364783c4c908071f5345b0cfc40663fc4a72a9a8a).
+To visit the notebook yourself, please visit this [link](http://3.17.178.241:8888/?token=677d7d4364783c4c908071f5345b0cfc40663fc4a72a9a8a). This will take you to the jupyter homepage. The notebook is named SQL Query NB.
 
 ## About the files:
 
