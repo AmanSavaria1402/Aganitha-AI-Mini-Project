@@ -28,7 +28,7 @@ To pull these images in your system/cloud instance, use the following commands:
     `docker pull jupyter/minimal-notebook`  and `docker pull postgres`
 - Now, create the postgres container first and import the database. Use the following commands to do this:
 
-    `docker run --name postgres_server -v "$PWD"/:/db/ -e POSTGRES_PASSWORD=password -d postgres`
+    `docker run --name postgres_server -v "$PWD"/:/db/ -e POSTGRES_PASSWORD=password -d postgres`<br>
     `docker exec -it postgres_server psql -U postgres -f /db/database.sql`
     <br>**Note:** Change the location in the -v tag to point to the location where the database sql script is stored in the first line.
 - Now, create the jupyter notebook container and link it to the postgres container using the following command in the terminal:
